@@ -14,6 +14,6 @@ class NRF5284():
 
     def get_light(self):
         data=self.read_raw()
-        light=int(data[11])+int(data[12])+int(data[13])+int(data[14])
+        light=int(data[0])+int(data[1])+int(data[2])+int(data[3])
 
         return light
